@@ -14,10 +14,8 @@ defineProps({
         <!-- ══ BANNER INSTITUCIONAL ══════════════════════════════ -->
         <div class="public-banner">
             <div class="public-banner-inner">
-                <img src="/images/banner-sesaech.png" alt="SESAECH" class="public-banner-img" />
-                <span class="public-banner-title">Sistema de Seguimiento y Evaluación de la PEA</span>
-                <img src="/images/logo-humanismo.png" alt="Humanismo que Transforma" class="public-banner-img" />
-            </div>
+                <img src="/images/banner-sesaech.png" alt="SESAECH" class="banner-img" />
+              </div>
         </div>
 
         <!-- ══ HEADER NAV ════════════════════════════════════════ -->
@@ -47,7 +45,7 @@ defineProps({
             <div class="public-hero-inner">
 
                 <div class="public-hero-logo">
-                    <img src="/images/logo-sesaech.png" alt="SESAECH" class="public-hero-logo-img" />
+                    <img src="/images/Logotipo%20nuevo.png" alt="SESAECH" class="public-hero-logo-img" />
                 </div>
 
                 <div class="public-hero-content">
@@ -211,30 +209,16 @@ defineProps({
 }
 
 /* ── Banner ─────────────────────────────────────────────── */
-.public-banner {
-    background: var(--color-arena);
-    border-bottom: 2px solid rgba(174,25,34,0.12);
-    height: 56px;
+.banner {
+    height: var(--banner-h);
+    padding: 0;
 }
-
-.public-banner-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.banner-img {
     height: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.public-banner-img { height: 40px; width: auto; object-fit: contain; }
-
-.public-banner-title {
-    font-family: var(--font-display);
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--color-vino);
-    letter-spacing: 0.02em;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* ── Header nav ─────────────────────────────────────────── */
